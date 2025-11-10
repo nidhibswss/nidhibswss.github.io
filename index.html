@@ -25,20 +25,29 @@
 <!-- navbar open-->
  <div class="top-line"></div>
 <header>
-        
 
-        <div id="menu" class="navbars"></div>
-        <nav class="navbar">
-            <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#achievement">Achievements</a></li>
-            </ul>
-        </nav>
-      
+  <div id="menu" class="fa fa-bars"></div> <!-- Hamburger Icon -->
+
+  <nav class="navbar">
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#achievement">Achievements</a></li>
+    </ul>
+  </nav>
+
 </header>
+<script>
+let menu = document.querySelector('#menu');
+let navbar = document.querySelector('header .navbar');
+
+menu.onclick = () => {
+  menu.classList.toggle('fa-times');
+  navbar.classList.toggle('nav-toggle');
+};
+</script>
 <!-- navbar close -->
 
 
